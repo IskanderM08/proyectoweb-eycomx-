@@ -5,14 +5,14 @@ body {
 
 .navegacion {
     background-color: black;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .top-navigation-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 .top-navigation-wrap a {
@@ -23,7 +23,7 @@ body {
 }
 
 .top-navigation-wrap img {
-    max-width: 160px;
+    max-width: 10rem;
     height: auto;
 }
 
@@ -42,12 +42,12 @@ nav .left-menu {
 }
 
 nav .left-menu li {
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 
 nav .left-menu li a {
     display: block;
-    padding: 10px 15px;
+    padding: 0.625rem 0.9375rem;
     text-decoration: none;
     color: white;
 }
@@ -57,24 +57,32 @@ nav .left-menu li a:hover {
 }
 
 nav .right-menu {
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     text-decoration: none;
     color: white;
     font-weight: bold;
     background: linear-gradient(225deg, #56565600, #7b7b7b);
     border-color: linear-gradient(90deg, #ffffff00, #fff9f9);
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     transition: background 0.3s ease;
+}
+
+.first_box {
+    background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0) 10%, rgba(33, 25, 21, 0) 100%),
+        url(https://eycomx.com/wp-content/uploads/2024/06/motion-Image-1-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
 }
 
 .second_box {
     background-color: white;
-    height: 820px;
+    height: 51.25rem;
     justify-content: center;
     text-align: center;
     position: relative;
@@ -83,17 +91,17 @@ nav .right-menu {
 .footer-box-text {
     color: rgb(255, 255, 255);
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 19px;
+    font-size: 1.1875rem;
     text-align: left;
     position: relative;
-    margin-left: 20px;
-    top: -70px;
+    margin-left: 1.25rem;
+    top: -4.375rem;
 }
 
 .footer_box {
     background-color: black;
-    height: 120px;
-    padding: 20px;
+    height: 7.5rem;
+    padding: 1.25rem;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -103,14 +111,14 @@ nav .right-menu {
 
 .footer_box .copyright {
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #808080;
-    padding: 10px;
-    margin-left: 20px;
+    padding: 0.625rem;
+    margin-left: 1.25rem;
     text-align: left;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 1.25rem;
+    left: 1.25rem;
 }
 
 .social-media {
@@ -119,10 +127,10 @@ nav .right-menu {
     margin: 0;
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 0.625rem;
     position: absolute;
-    bottom: 40px;
-    right: 20px;
+    bottom: 2.5rem;
+    right: 1.25rem;
 }
 
 .social-media li {
@@ -133,7 +141,7 @@ nav .right-menu {
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .social-media a:hover {
@@ -142,14 +150,43 @@ nav .right-menu {
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 10px;
+    max-width: 75rem;
+    margin: 1.25rem auto;
+    padding: 0.625rem;
+}
+
+.text-panel {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #333;
+}
+
+.text-panel h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.3125rem;
+    border-bottom: 0.0625rem solid #000;
+    display: inline-block;
+    padding-bottom: 0.3125rem;
+}
+
+.text-panel p {
+    font-size: 1rem;
+    margin: 0.625rem 0;
+}
+
+.text-panel p em {
+    font-size: 0.875rem;
+    font-style: italic;
+    color: #555;
+    display: block;
+    margin-bottom: 0.625rem;
 }
 
 .carousel-outer {
     width: 100%;
-    max-width: 800px;
+    max-width: 100%;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
@@ -168,11 +205,17 @@ nav .right-menu {
 .carousel-item {
     min-width: 100%;
     box-sizing: border-box;
+    max-width: 100%;
+    min-height: 50rem;
+    max-height: 100%;
+    align-items: center; 
 }
 
 .carousel-item img {
     width: 100%;
     display: block;
+    object-fit: cover;     
+    border-radius: 0.3125rem; 
 }
 
 .carousel-control {
@@ -182,15 +225,15 @@ nav .right-menu {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 0.625rem;
     cursor: pointer;
     z-index: 1;
 }
 
 .carousel-control.prev {
-    left: 10px;
+    left: 0.625rem;
 }
 
 .carousel-control.next {
-    right: 10px;
+    right: 0.625rem;
 }

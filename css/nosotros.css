@@ -72,6 +72,14 @@ nav .right-menu {
     transition: background 0.3s ease;
 }
 
+.first_box {
+    background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0) 10%, rgba(33, 25, 21, 0) 100%),
+        url(https://eycomx.com/wp-content/uploads/2024/08/nosotros-Image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
 .second_box {
     background-color: white;
     height: 1220px;
@@ -141,20 +149,55 @@ nav .right-menu {
 }
 
 .panel {
-    width: 200px;
+    width: 350px;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #414040;
+    background-color: #313131;
     padding: 20px;
     margin: 20px;
+    height: 350px;
+}
+
+.panel-central {
+    width: 1200px;
+    text-align: center;
+    border: 1px solid #414040;
+    background-color: #313131;
+    padding: 20px;
+    margin: 20px;
+    height: 650px;
+}
+
+.panel-central img {
+    max-width: 100%;
+}
+
+.panel-central p, h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.panel-central h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.panel p, li {
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.panel h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
 }
 
 .panel img {
     max-width: 100%;
-}
-
-.panel a {
-    text-decoration: none;
-    color: blue;
 }
 
 .panel-container {

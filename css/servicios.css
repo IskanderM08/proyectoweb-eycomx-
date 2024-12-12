@@ -74,7 +74,7 @@ nav .right-menu {
 
 .second_box {
     background-color: white;
-    height: 820px;
+    height: 1020px;
     justify-content: center;
     text-align: center;
     position: relative;
@@ -140,21 +140,31 @@ nav .right-menu {
     color: #f1f1f1;
 }
 
+
 .panel {
-    width: 200px;
+    width: 400px;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #414040;
+    background-color: #313131;
     padding: 20px;
     margin: 20px;
+    height: 400px;
+}
+
+.panel p{
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.panel h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
 }
 
 .panel img {
-    max-width: 100%;
-}
-
-.panel a {
-    text-decoration: none;
-    color: blue;
+    max-width: 50%;
 }
 
 .panel-container {

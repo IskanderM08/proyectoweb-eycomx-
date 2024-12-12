@@ -5,14 +5,14 @@ body {
 
 .navegacion {
     background-color: black;
-    padding: 0 1.25rem;
+    padding: 0 20px;
 }
 
 .top-navigation-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.625rem 0;
+    padding: 10px 0;
 }
 
 .top-navigation-wrap a {
@@ -23,7 +23,7 @@ body {
 }
 
 .top-navigation-wrap img {
-    max-width: 10rem;
+    max-width: 160px;
     height: auto;
 }
 
@@ -42,12 +42,12 @@ nav .left-menu {
 }
 
 nav .left-menu li {
-    margin: 0 0.625rem;
+    margin: 0 10px;
 }
 
 nav .left-menu li a {
     display: block;
-    padding: 0.625rem 0.9375rem;
+    padding: 10px 15px;
     text-decoration: none;
     color: white;
 }
@@ -57,32 +57,40 @@ nav .left-menu li a:hover {
 }
 
 nav .right-menu {
-    margin-left: 1.25rem;
+    margin-left: 20px;
 }
 
 .button {
     display: inline-block;
-    padding: 0.625rem 1.25rem;
+    padding: 10px 20px;
     text-decoration: none;
     color: white;
     font-weight: bold;
     background: linear-gradient(225deg, #56565600, #7b7b7b);
     border-color: linear-gradient(90deg, #ffffff00, #fff9f9);
-    border-radius: 0.3125rem;
+    border-radius: 5px;
     transition: background 0.3s ease;
-}
-
-.first_box {
-    background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0) 10%, rgba(33, 25, 21, 0) 100%),
-        url(https://eycomx.com/wp-content/uploads/2024/06/Foto-Image-1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 25rem;
 }
 
 .second_box {
     background-color: white;
-    height: 51.25rem;
+    height: 1020px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.fourth_box {
+    background-color: white;
+    height: 420px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.third_box {
+    background-color: black;
+    height: 1220px;
     justify-content: center;
     text-align: center;
     position: relative;
@@ -91,17 +99,17 @@ nav .right-menu {
 .footer-box-text {
     color: rgb(255, 255, 255);
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.1875rem;
+    font-size: 19px;
     text-align: left;
     position: relative;
-    margin-left: 1.25rem;
-    top: -4.375rem;
+    margin-left: 20px;
+    top: -70px;
 }
 
 .footer_box {
     background-color: black;
-    height: 7.5rem;
-    padding: 1.25rem;
+    height: 120px;
+    padding: 20px;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -111,14 +119,14 @@ nav .right-menu {
 
 .footer_box .copyright {
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     background-color: #808080;
-    padding: 0.625rem;
-    margin-left: 1.25rem;
+    padding: 10px;
+    margin-left: 20px;
     text-align: left;
     position: absolute;
-    bottom: 1.25rem;
-    left: 1.25rem;
+    bottom: 20px;
+    left: 20px;
 }
 
 .social-media {
@@ -127,10 +135,10 @@ nav .right-menu {
     margin: 0;
     display: flex;
     justify-content: flex-start;
-    gap: 0.625rem;
+    gap: 10px;
     position: absolute;
-    bottom: 2.5rem;
-    right: 1.25rem;
+    bottom: 40px;
+    right: 20px;
 }
 
 .social-media li {
@@ -141,99 +149,96 @@ nav .right-menu {
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
 }
 
 .social-media a:hover {
     color: #f1f1f1;
 }
 
-.container {
-    width: 100%;
-    max-width: 75rem;
-    margin: 1.25rem auto;
-    padding: 0.625rem;
+.first_box {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
 }
 
-.text-panel {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.8;
-    color: #333;
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .text-panel h2 {
+    color: #000000;
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0.3125rem;
-    border-bottom: 0.0625rem solid #000;
+    border-bottom: 0.0625rem solid #000000;
     display: inline-block;
     padding-bottom: 0.3125rem;
 }
 
 .text-panel p {
-    font-size: 1rem;
-    margin: 0.625rem 0;
+    color: #000000;
+    line-height: 1.6;
 }
 
-.text-panel p em {
-    font-size: 0.875rem;
-    font-style: italic;
-    color: #555;
-    display: block;
-    margin-bottom: 0.625rem;
+@media (max-width: 768px) {
+    .text-panel {
+        width: 100%;
+    }
 }
 
-.carousel-outer {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
+.text-panel img {
+    max-width: 20%;
 }
 
-.carousel {
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    max-width: 100%;
-    min-height: 50rem;
-    max-height: 100%;
-    align-items: center;
-}
-
-.carousel-item img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    border-radius: 0.3125rem;
-}
-
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+.third-text-panel h2,
+.third-panel h4,
+.third-panel p {
     color: white;
-    border: none;
-    padding: 0.625rem;
-    cursor: pointer;
-    z-index: 1;
 }
 
-.carousel-control.prev {
-    left: 0.625rem;
+.third-panel img {
+    max-width: 100%;
+    height: auto;
 }
 
-.carousel-control.next {
-    right: 0.625rem;
+.third-panel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.third-panel {
+    width: 400px;
+    text-align: center;
+    border: 1px solid #414040;
+    background-color: #313131;
+    padding: 20px;
+    margin: 20px;
+    height: 400px;
+}
+
+.third-text-panel{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.3125rem;
+    border-bottom: 0.0625rem solid #FFFFFF;
+    display: inline-block;
+    padding-bottom: 0.3125rem;
 }
