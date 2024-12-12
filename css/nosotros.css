@@ -5,14 +5,14 @@ body {
 
 .navegacion {
     background-color: black;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .top-navigation-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 .top-navigation-wrap a {
@@ -23,7 +23,7 @@ body {
 }
 
 .top-navigation-wrap img {
-    max-width: 160px;
+    max-width: 10rem;
     height: auto;
 }
 
@@ -42,12 +42,12 @@ nav .left-menu {
 }
 
 nav .left-menu li {
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 
 nav .left-menu li a {
     display: block;
-    padding: 10px 15px;
+    padding: 0.625rem 0.9375rem;
     text-decoration: none;
     color: white;
 }
@@ -57,18 +57,18 @@ nav .left-menu li a:hover {
 }
 
 nav .right-menu {
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     text-decoration: none;
     color: white;
     font-weight: bold;
     background: linear-gradient(225deg, #56565600, #7b7b7b);
     border-color: linear-gradient(90deg, #ffffff00, #fff9f9);
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     transition: background 0.3s ease;
 }
 
@@ -77,12 +77,12 @@ nav .right-menu {
         url(https://eycomx.com/wp-content/uploads/2024/08/nosotros-Image-1.jpg);
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 25rem;
 }
 
 .second_box {
     background-color: white;
-    height: 1220px;
+    height: 76.25rem;
     justify-content: center;
     text-align: center;
     position: relative;
@@ -91,17 +91,17 @@ nav .right-menu {
 .footer-box-text {
     color: rgb(255, 255, 255);
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 19px;
+    font-size: 1.1875rem;
     text-align: left;
     position: relative;
-    margin-left: 20px;
-    top: -70px;
+    margin-left: 1.25rem;
+    top: -4.375rem;
 }
 
 .footer_box {
     background-color: black;
-    height: 120px;
-    padding: 20px;
+    height: 7.5rem;
+    padding: 1.25rem;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -111,14 +111,14 @@ nav .right-menu {
 
 .footer_box .copyright {
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #808080;
-    padding: 10px;
-    margin-left: 20px;
+    padding: 0.625rem;
+    margin-left: 1.25rem;
     text-align: left;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 1.25rem;
+    left: 1.25rem;
 }
 
 .social-media {
@@ -127,10 +127,10 @@ nav .right-menu {
     margin: 0;
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 0.625rem;
     position: absolute;
-    bottom: 40px;
-    right: 20px;
+    bottom: 2.5rem;
+    right: 1.25rem;
 }
 
 .social-media li {
@@ -141,7 +141,7 @@ nav .right-menu {
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .social-media a:hover {
@@ -149,23 +149,23 @@ nav .right-menu {
 }
 
 .panel {
-    width: 350px;
+    width: 21.875rem;
     text-align: center;
-    border: 1px solid #414040;
+    border: 0.0625rem solid #414040;
     background-color: #313131;
-    padding: 20px;
-    margin: 20px;
-    height: 350px;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    height: 21.875rem;
 }
 
 .panel-central {
-    width: 1200px;
+    width: 75rem;
     text-align: center;
-    border: 1px solid #414040;
+    border: 0.0625rem solid #414040;
     background-color: #313131;
-    padding: 20px;
-    margin: 20px;
-    height: 650px;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    height: 40.625rem;
 }
 
 .panel-central img {
@@ -178,7 +178,7 @@ nav .right-menu {
 }
 
 .panel-central h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -190,7 +190,7 @@ nav .right-menu {
 }
 
 .panel h2{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
