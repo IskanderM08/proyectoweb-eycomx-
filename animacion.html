@@ -5,22 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animación</title>
+    <link rel="stylesheet" href="css/animacion.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Página Principal (Logo EYCOmx)</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="cotizaciones.html">Cotizar</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="otras.html">Otras (En un momento lo veo)</a></li>
-        </ul>
-    </nav>
+    <div class="navegacion">
+        <div class="top-navigation-wrap">
+            <a href="index.html">
+                <img src="contenido/logos/eyco.png" alt="Logo EYCOmx">
+            </a>
+            <nav>
+                <ul class="left-menu">
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+                <div class="right-menu">
+                    <a href="cotizaciones.html" class="button">Cotizar</a>
+                </div>
+            </nav>
+        </div>
+    </div>
 
     <div class="container">
-        <!-- Panel de texto -->
         <div class="text-panel">
             <h2>Logotipos Animados</h2>
             <p><em>Ideal para:</em> Intros de Vídeos Corporativos y Contenido de Redes Sociales</p>
@@ -31,14 +38,23 @@
             </p>
         </div>
 
-        <!-- Ingrese Carrusel -->
-        <div class="media-panel">
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-            </video>
-            <video controls>
-                <source src="video2.mp4" type="video/mp4">
-            </video>
+        <div class="carousel-outer">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video controls>
+                            <source src="contenido/animacion/logotipos1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="contenido/animacion/logotipos2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide(this)">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide(this)">&#10095;</button>
+            </div>
         </div>
     </div>
 
@@ -53,20 +69,42 @@
             </p>
         </div>
 
-
-        <!-- Ingrese Carrusel -->
-        <div class="media-panel">
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-            </video>
-            <video controls>
-                <source src="video2.mp4" type="video/mp4">
-            </video>
+        <div class="carousel-outer">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video controls>
+                            <source src="contenido/animacion/secuencia1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="contenido/animacion/secuencia2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="contenido/animacion/secuencia3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="contenido/animacion/secuencia4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="contenido/animacion/secuencia5.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide(this)">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide(this)">&#10095;</button>
+            </div>
         </div>
     </div>
 
     <div class="container">
-        <!-- Panel 2 -->
         <div class="text-panel">
             <h2>Personajes Animados</h2>
             <p><em>Ideal para:</em> Campañas Publicitarias y Videos Explicativos</p>
@@ -77,19 +115,32 @@
             </p>
         </div>
 
-        <!-- Ingrese Carrusel -->
-        <div class="media-panel">
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-            </video>
-            <video controls>
-                <source src="video2.mp4" type="video/mp4">
-            </video>
+        <div class="carousel-outer">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video controls>
+                            <source src="contenido/animacion/personajes1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="contenido/animacion/personajes2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="contenido/animacion/personajes3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide(this)">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide(this)">&#10095;</button>
+            </div>
         </div>
     </div>
 
     <div class="container">
-        <!-- Panel 3 -->
         <div class="text-panel">
             <h2>Infografías Animadas</h2>
             <p><em>Ideal para:</em> Presentaciones Corporativas y Marketing de Contenidos</p>
@@ -100,27 +151,41 @@
             </p>
         </div>
 
-        <!-- Ingrese Carrusel -->
-        <div class="media-panel">
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-            </video>
-            <video controls>
-                <source src="video2.mp4" type="video/mp4">
-            </video>
+        <div class="carousel-outer">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video controls>
+                            <source src="contenido/animacion/infografia1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video controls>
+                            <source src="contenido/animacion/infografia2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide(this)">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide(this)">&#10095;</button>
+            </div>
         </div>
     </div>
 
+    <script src="scripts/carrusel.js"></script>
+</body>
 
-    <nav>
-        <p>Desde 2017, en EYCOmx nos dedicamos a elevar marcas al mundo digital con creatividad y estrategia. Somos un equipo apasionado por el diseño, el marketing y la publicidad.</p>
-        <ul>
+<footer>
+    <div class="footer_box">
+        <p class="footer-box-text">Desde 2017, en EYCOmx nos dedicamos a elevar marcas al mundo digital con
+            creatividad y estrategia. Somos un equipo apasionado por el diseño, el marketing y la publicidad.</p>
+
+        <ul class="social-media">
             <li><a href="https://www.instagram.com/eycomx" target="_blank">Instagram</a></li>
             <li><a href="https://www.facebook.com/EYCOmx" target="_blank">Facebook</a></li>
             <li><a href="https://www.tiktok.com/@eycomx" target="_blank">TikTok</a></li>
         </ul>
-        <p>Copyright © 2024 Hecho por EYCOmx</p>
-    </nav>
-</body>
+        <p class="copyright">Copyright © 2024 Hecho por EYCOmx</p>
+    </div>
+</footer>
 
 </html>

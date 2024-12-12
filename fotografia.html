@@ -5,19 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotografía</title>
+    <link rel="stylesheet" href="css/fotografia.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Página Principal (Logo EYCOmx)</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="cotizaciones.html">Cotizar</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="otras.html">Otras (En un momento lo veo)</a></li>
-        </ul>
-    </nav>
+    <div class="navegacion">
+        <div class="top-navigation-wrap">
+            <a href="index.html">
+                <img src="contenido/logos/eyco.png" alt="Logo EYCOmx">
+            </a>
+            <nav>
+                <ul class="left-menu">
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+                <div class="right-menu">
+                    <a href="cotizaciones.html" class="button">Cotizar</a>
+                </div>
+            </nav>
+        </div>
+    </div>
 
     <div class="container">
         <div class="text-panel">
@@ -31,58 +39,152 @@
             </p>
         </div>
 
-        <!-- Ingrese Carrusel -->
-        <div class="media-panel">
-            <img src="food_photo1.jpg" alt="Foto Gastronómica 1">
-            <img src="food_photo2.jpg" alt="Foto Gastronómica 2">
+        <div class="carousel-outer">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="contenido/fotografia/gastronomica1.jpg" alt="Foto Gastronómica 1">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="contenido/fotografia/gastronomica2.jpg" alt="Foto Gastronómica 2">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="contenido/fotografia/gastronomica3.jpg" alt="Foto Gastronómica 3">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="contenido/fotografia/gastronomica4.jpg" alt="Foto Gastronómica 4">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="contenido/fotografia/gastronomica5.jpg" alt="Foto Gastronómica 5">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="contenido/fotografia/gastronomica6.jpg" alt="Foto Gastronómica 6">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="contenido/fotografia/gastronomica7.jpg" alt="Foto Gastronómica 7">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="contenido/fotografia/gastronomica8.jpg" alt="Foto Gastronómica 8">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="contenido/fotografia/gastronomica9.jpg" alt="Foto Gastronómica 9">
+                    </div>
+
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="text-panel">
+                <h2>Foto de Producto</h2>
+                <p><em>Ideal para:</em> Intros de Videos Corporativos y Contenido de Redes Sociales</p>
+                <p>
+                    Diseñamos el espacio ideal para capturar la esencia y la calidad de tus productos, destacándolos de
+                    manera atractiva y profesional. Usamos la iluminación, la composición y edición para resaltar las
+                    características únicas y generar una conexión con tu audiencia para potenciar tus ventas.
+                </p>
+            </div>
+
+            <div class="carousel-outer">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="contenido/fotografia/producto1.jpg" alt="Foto de Producto 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/producto2.jpg" alt="Foto de Producto 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/producto3.jpg" alt="Foto de Producto 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/producto4.jpg" alt="Foto de Producto 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/producto5.jpg" alt="Foto de Producto 5">
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" data-carousel-prev>&#10094;</button>
+                    <button class="carousel-control next" data-carousel-next>&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="text-panel">
+                <h2>Foto Social</h2>
+                <p><em>Ideal para:</em> Fiestas y Celebraciones</p>
+                <p>
+                    Inmortalizamos los momentos más especiales de tu vida, asegurándonos de que cada recuerdo sea único.
+                    Capturando la emoción de cada instante importante en un registro visual, para que puedas compartir
+                    tu
+                    experiencia con todos y crear así recuerdos duraderos.
+                </p>
+            </div>
+
+            <div class="carousel-outer">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="contenido/fotografia/social1.jpg" alt="Foto Social 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/social2.jpg" alt="Foto Social 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/social3.jpg" alt="Foto Social 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/social4.jpg" alt="Foto Social 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/social5.jpg" alt="Foto Social 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/social6.jpg" alt="Foto Social 6">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/social7.jpg" alt="Foto Social 7">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/social8.jpg" alt="Foto Social 8">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="contenido/fotografia/social9.jpg" alt="Foto Social 9">
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="text-panel">
-            <h2>Foto de Producto</h2>
-            <p><em>Ideal para:</em> Intros de Videos Corporativos y Contenido de Redes Sociales</p>
-            <p>
-                Diseñamos el espacio ideal para capturar la esencia y la calidad de tus productos, destacándolos de
-                manera atractiva y profesional. Usamos la iluminación, la composición y edición para resaltar las
-                características únicas y generar una conexión con tu audiencia para potenciar tus ventas.
-            </p>
-        </div>
+    <script src="scripts/carrusel.js"></script>
+</body>
 
-        <!-- Ingrese Carrusel -->
-        <div class="media-panel">
-            <img src="product_photo1.jpg" alt="Foto de Producto 1">
-            <img src="product_photo2.jpg" alt="Foto de Producto 2">
-        </div>
-    </div>
+<footer>
+    <div class="footer_box">
+        <p class="footer-box-text">Desde 2017, en EYCOmx nos dedicamos a elevar marcas al mundo digital con
+            creatividad y estrategia. Somos un equipo apasionado por el diseño, el marketing y la publicidad.</p>
 
-    <div class="container">
-        <div class="text-panel">
-            <h2>Foto Social</h2>
-            <p><em>Ideal para:</em> Fiestas y Celebraciones</p>
-            <p>
-                Inmortalizamos los momentos más especiales de tu vida, asegurándonos de que cada recuerdo sea único.
-                Capturando la emoción de cada instante importante en un registro visual, para que puedas compartir tu
-                experiencia con todos y crear así recuerdos duraderos.
-            </p>
-        </div>
-
-        <!-- Ingrese Carrusel -->
-        <div class="media-panel">
-            <img src="social_photo1.jpg" alt="Foto Social 1">
-            <img src="social_photo2.jpg" alt="Foto Social 2">
-        </div>
-    </div>
-
-    <nav>
-        <p>Desde 2017, en EYCOmx nos dedicamos a elevar marcas al mundo digital con creatividad y estrategia. Somos un equipo apasionado por el diseño, el marketing y la publicidad.</p>
-        <ul>
+        <ul class="social-media">
             <li><a href="https://www.instagram.com/eycomx" target="_blank">Instagram</a></li>
             <li><a href="https://www.facebook.com/EYCOmx" target="_blank">Facebook</a></li>
             <li><a href="https://www.tiktok.com/@eycomx" target="_blank">TikTok</a></li>
         </ul>
-        <p>Copyright © 2024 Hecho por EYCOmx</p>
-    </nav>
-</body>
+        <p class="copyright">Copyright © 2024 Hecho por EYCOmx</p>
+    </div>
+</footer>
 
 </html>

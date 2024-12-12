@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navegacion {
+    background-color: black;
+    padding: 0 20px;
+}
+
+.top-navigation-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.top-navigation-wrap a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.top-navigation-wrap img {
+    max-width: 160px;
+    height: auto;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .left-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .left-menu li {
+    margin: 0 10px;
+}
+
+nav .left-menu li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav .left-menu li a:hover {
+    background-color: #555;
+}
+
+nav .right-menu {
+    margin-left: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(225deg, #56565600, #7b7b7b);
+    border-color: linear-gradient(90deg, #ffffff00, #fff9f9);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.first_box {
+    background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0) 10%, rgba(33, 25, 21, 0) 100%),
+        url(https://eycomx.com/wp-content/uploads/2024/08/contizar-Image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.main_container {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: black;
+
+}
+
+.form-container {
+    background-color: #2c2c2c;
+    width: calc(100% - 368px);
+    margin: 0 auto;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(158, 158, 158, 0.1);
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    margin: 0;
+    background-color: #2c2c2c;
+    border: 1px solid #fcf6f6;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    border-radius: 0;
+}
+
+.form-group input#nombre {
+    width: 870px;
+    height: 24px;
+}
+
+.form-group input#correo,
+.form-group input#telefono,
+.form-group textarea#mensaje {
+    width: 400px;
+    height: 20px;
+}
+
+.form-group select {
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.form-group select option {
+    margin-bottom: 20px;
+}
+
+.form-group-inline {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-group-inline .form-group {
+    flex: 1;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 254px;
+    height: 40px;
+    text-align: left;
+    margin-left: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.first_box {
+    background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0) 10%, rgba(33, 25, 21, 0) 100%),
+        url(https://eycomx.com/wp-content/uploads/2024/08/contizar-Image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.second_box {
+    background-color: white;
+    height: 620px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.footer-box-text {
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 19px;
+    text-align: left;
+    position: relative;
+    margin-left: 20px;
+    top: -70px;
+}
+
+.footer_box {
+    background-color: black;
+    height: 120px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+.footer_box .copyright {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #808080;
+    padding: 10px;
+    margin-left: 20px;
+    text-align: left;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.social-media li {
+    margin: 0;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.social-media a:hover {
+    color: #f1f1f1;
+}
