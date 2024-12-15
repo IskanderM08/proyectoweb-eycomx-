@@ -67,58 +67,51 @@ nav .right-menu {
     color: white;
     font-weight: bold;
     background: linear-gradient(225deg, #56565600, #7b7b7b);
-    border-color: linear-gradient(90deg, #ffffff00, #fff9f9);
     border-radius: 0.3125rem;
     transition: background 0.3s ease;
 }
 
-.first_box {
-    background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0) 10%, rgba(33, 25, 21, 0) 100%),
-        url(https://eycomx.com/wp-content/uploads/2024/06/Diseno-Image-1-4.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 25rem;
+.second_box, .third_box, .fourth_box {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
 }
 
 .second_box {
     background-color: white;
-    height: 51.25rem;
-    justify-content: center;
-    text-align: center;
-    position: relative;
+}
+
+.third_box {
+    background-color: black;
+}
+
+.fourth_box {
+    background-color: white;
 }
 
 .footer-box-text {
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.1875rem;
+    font-size: 1rem;
     text-align: left;
-    position: relative;
     margin-left: 1.25rem;
-    top: -4.375rem;
 }
 
 .footer_box {
     background-color: black;
-    height: 7.5rem;
     padding: 1.25rem;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    position: relative;
 }
 
 .footer_box .copyright {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 0.875rem;
     background-color: #808080;
     padding: 0.625rem;
-    margin-left: 1.25rem;
-    text-align: left;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 1.25rem;
 }
 
 .social-media {
@@ -126,43 +119,51 @@ nav .right-menu {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start;
     gap: 0.625rem;
-    position: absolute;
-    bottom: 2.5rem;
-    right: 1.25rem;
-}
-
-.social-media li {
-    margin: 0;
 }
 
 .social-media a {
     text-decoration: none;
     color: white;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 .social-media a:hover {
     color: #f1f1f1;
 }
 
-.container {
+.first_box {
+    position: relative;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 75rem;
-    margin: 1.25rem auto;
-    padding: 0.625rem;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.25rem;
 }
 
 .text-panel {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.8;
-    color: #333;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.25rem;
 }
 
 .text-panel h2 {
-    font-size: 1.5rem;
+    color: #000;
+    font-size: 1.25rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0.3125rem;
@@ -172,16 +173,67 @@ nav .right-menu {
 }
 
 .text-panel p {
-    font-size: 1rem;
-    margin: 0.625rem 0;
+    color: #000;
+    line-height: 1.6;
 }
 
-.text-panel p em {
-    font-size: 0.875rem;
-    font-style: italic;
-    color: #555;
-    display: block;
-    margin-bottom: 0.625rem;
+.third-panel {
+    width: 100%;
+    text-align: center;
+    border: 0.0625rem solid #414040;
+    background-color: #313131;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+}
+
+.third-panel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.third-text-panel h2, .third-panel h4, .third-panel p {
+    color: white;
+}
+
+.third-text-panel {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.3125rem;
+    border-bottom: 0.0625rem solid #fff;
+    display: inline-block;
+    padding-bottom: 0.3125rem;
+}
+
+@media (max-width: 768px) {
+    .top-navigation-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .left-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer_box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .third-panel {
+        width: 90%;
+    }
 }
 
 .carousel-outer {
@@ -195,24 +247,29 @@ nav .right-menu {
 .carousel {
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .carousel-inner {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
 }
 
 .carousel-item {
-    min-width: 100%;
+    flex: 0 0 100%;
     box-sizing: border-box;
-    max-width: 100%;
-    min-height: 50rem;
-    max-height: 100%;
     align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 25rem;
+    overflow: hidden;
+    position: relative;
 }
 
 .carousel-item img {
     width: 100%;
+    height: auto;
     display: block;
     object-fit: cover;
     border-radius: 0.3125rem;
@@ -225,9 +282,10 @@ nav .right-menu {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 0.625rem;
+    padding: 0.625rem 1rem;
     cursor: pointer;
     z-index: 1;
+    font-size: 1rem;
 }
 
 .carousel-control.prev {
@@ -236,4 +294,12 @@ nav .right-menu {
 
 .carousel-control.next {
     right: 0.625rem;
+}
+
+.first_box {
+    background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0) 10%, rgba(33, 25, 21, 0) 100%),
+        url(https://eycomx.com/wp-content/uploads/2024/06/Diseno-Image-1-4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
 }
