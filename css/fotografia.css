@@ -13,7 +13,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0.625rem 0;
-    flex-wrap: wrap;
 }
 
 .top-navigation-wrap a {
@@ -33,7 +32,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 nav .left-menu {
@@ -41,7 +39,6 @@ nav .left-menu {
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
 }
 
 nav .left-menu li {
@@ -70,107 +67,148 @@ nav .right-menu {
     color: white;
     font-weight: bold;
     background: linear-gradient(225deg, #56565600, #7b7b7b);
-    border-color: linear-gradient(90deg, #ffffff00, #fff9f9);
     border-radius: 0.3125rem;
     transition: background 0.3s ease;
 }
 
-.first_box {
-    background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0) 10%, rgba(33, 25, 21, 0) 100%),
-        url(https://eycomx.com/wp-content/uploads/2024/06/Foto-Image-1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 25rem;
-}
-
-.second_box {
-    background-color: white;
-    height: auto;
+.second_box, .third_box, .fourth_box {
     justify-content: center;
     text-align: center;
     position: relative;
     padding: 2rem;
 }
 
+.second_box {
+    background-color: white;
+}
+
+.third_box {
+    background-color: black;
+}
+
+.fourth_box {
+    background-color: white;
+}
+
 .footer-box-text {
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.1875rem;
+    font-size: 1rem;
     text-align: left;
-    position: relative;
     margin-left: 1.25rem;
-    top: -4.375rem;
 }
 
 .footer_box {
     background-color: black;
-    height: auto;
     padding: 1.25rem;
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .footer_box .copyright {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 0.875rem;
     background-color: #808080;
     padding: 0.625rem;
-    margin-top: 1.25rem;
 }
 
 .social-media {
     list-style: none;
     padding: 0;
-    margin: 1rem 0 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
     gap: 0.625rem;
 }
 
 .social-media a {
     text-decoration: none;
     color: white;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
-.carousel-outer {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
+.social-media a:hover {
+    color: #f1f1f1;
+}
+
+.first_box {
     position: relative;
-    margin: 0 auto;
+    height: 15rem;
+    overflow: hidden;
 }
 
-.carousel-item img {
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: block;
+    height: 100%;
     object-fit: cover;
-    border-radius: 0.3125rem;
+    z-index: -1;
 }
 
-/* Media Queries */
-@media (max-width: 1024px) {
-    .top-navigation-wrap img {
-        max-width: 8rem;
-    }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.25rem;
+}
 
-    .carousel-item {
-        min-height: 30rem;
-    }
+.text-panel {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
 
-    .second_box {
-        padding: 1.5rem;
-    }
+.text-panel h2 {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.3125rem;
+    border-bottom: 0.0625rem solid #000;
+    display: inline-block;
+    padding-bottom: 0.3125rem;
+}
+
+.text-panel p {
+    color: #000;
+    line-height: 1.6;
+}
+
+.third-panel {
+    width: 100%;
+    text-align: center;
+    border: 0.0625rem solid #414040;
+    background-color: #313131;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+}
+
+.third-panel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.third-text-panel h2, .third-panel h4, .third-panel p {
+    color: white;
+}
+
+.third-text-panel {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.3125rem;
+    border-bottom: 0.0625rem solid #fff;
+    display: inline-block;
+    padding-bottom: 0.3125rem;
 }
 
 @media (max-width: 768px) {
     .top-navigation-wrap {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     nav {
@@ -178,35 +216,22 @@ nav .right-menu {
         align-items: flex-start;
     }
 
-    nav .left-menu li {
-        margin: 0.5rem 0;
-    }
-
-    .first_box {
-        height: 20rem;
+    nav .left-menu {
+        flex-direction: column;
+        width: 100%;
     }
 
     .footer_box {
-        padding: 1rem;
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    .footer_box .copyright {
-        margin-top: 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .top-navigation-wrap img {
-        max-width: 6rem;
+    .social-media {
+        justify-content: center;
     }
 
-    .carousel-item {
-        min-height: 20rem;
-    }
-
-    nav .left-menu li a {
-        padding: 0.5rem 0.75rem;
+    .third-panel {
+        width: 90%;
     }
 }
