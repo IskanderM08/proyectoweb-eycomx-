@@ -296,3 +296,10 @@ nav .right-menu {
     right: 0.625rem;
 }
 
+.first_box {
+    background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0) 10%, rgba(33, 25, 21, 0) 100%),
+        url(https://eycomx.com/wp-content/uploads/2024/06/Foto-Image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+}
