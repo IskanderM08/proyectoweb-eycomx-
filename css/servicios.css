@@ -74,10 +74,13 @@ nav .right-menu {
 
 .second_box {
     background-color: white;
-    height: 63.75rem;
+    min-height: 63.75rem;
+    display: flex;
     justify-content: center;
     text-align: center;
     position: relative;
+    padding: 2rem;
+    flex-direction: column;
 }
 
 .footer-box-text {
@@ -92,12 +95,13 @@ nav .right-menu {
 
 .footer_box {
     background-color: black;
-    height: 7.5rem;
+    height: auto;
     padding: 1.25rem;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
 }
 
@@ -108,9 +112,6 @@ nav .right-menu {
     padding: 0.625rem;
     margin-left: 1.25rem;
     text-align: left;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 1.25rem;
 }
 
 .social-media {
@@ -120,9 +121,6 @@ nav .right-menu {
     display: flex;
     justify-content: flex-start;
     gap: 0.625rem;
-    position: absolute;
-    bottom: 2.5rem;
-    right: 1.25rem;
 }
 
 .social-media li {
@@ -141,13 +139,15 @@ nav .right-menu {
 }
 
 .panel {
-    width: 25rem;
+    width: 100%;
+    max-width: 25rem;
     text-align: center;
     border: 0.0625rem solid #414040;
     background-color: #313131;
     padding: 1.25rem;
-    margin: 1.25rem;
-    height: 25rem;
+    margin: 1.25rem auto;
+    height: auto;
+    box-sizing: border-box;
 }
 
 .panel p {
@@ -163,7 +163,8 @@ nav .right-menu {
 }
 
 .panel img {
-    max-width: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
 .panel-container {
@@ -171,4 +172,47 @@ nav .right-menu {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .top-navigation-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .left-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer_box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .panel {
+        max-width: 90%;
+    }
+
+    .footer-box-text {
+        font-size: 1rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .footer_box .copyright {
+        margin-left: 0;
+    }
 }
