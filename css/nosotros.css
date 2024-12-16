@@ -155,6 +155,9 @@ nav .right-menu {
     margin: 1.25rem;
     height: auto;
 }
+.panel p, .panel ul{
+    color: white;
+}
 
 .panel-central {
     width: 75%;
