@@ -82,10 +82,11 @@ nav .right-menu {
 
 .second_box {
     background-color: white;
-    height: 76.25rem;
+    height: auto;
     justify-content: center;
     text-align: center;
     position: relative;
+    padding: 1.25rem;
 }
 
 .footer-box-text {
@@ -93,14 +94,12 @@ nav .right-menu {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 1.1875rem;
     text-align: left;
-    position: relative;
     margin-left: 1.25rem;
     top: -4.375rem;
 }
 
 .footer_box {
     background-color: black;
-    height: 7.5rem;
     padding: 1.25rem;
     color: white;
     display: flex;
@@ -114,7 +113,6 @@ nav .right-menu {
     font-size: 1rem;
     background-color: #808080;
     padding: 0.625rem;
-    margin-left: 1.25rem;
     text-align: left;
     position: absolute;
     bottom: 1.25rem;
@@ -155,17 +153,16 @@ nav .right-menu {
     background-color: #313131;
     padding: 1.25rem;
     margin: 1.25rem;
-    height: 21.875rem;
+    height: auto;
 }
 
 .panel-central {
-    width: 75rem;
+    width: 75%;
     text-align: center;
     border: 0.0625rem solid #414040;
     background-color: #313131;
     padding: 1.25rem;
-    margin: 1.25rem;
-    height: 40.625rem;
+    margin: 1.25rem auto;
 }
 
 .panel-central img {
@@ -181,23 +178,6 @@ nav .right-menu {
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
-}
-
-.panel p, li {
-    color: rgb(255, 255, 255);
-    font-family: 'Open Sans', Arial, sans-serif;
-}
-
-.panel h2{
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-}
-
-.panel img {
-    max-width: 100%;
 }
 
 .panel-container {
@@ -207,12 +187,28 @@ nav .right-menu {
     flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .top-navigation-wrap {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
+    .panel-central {
+        width: 90%;
+    }
+
+    .footer_box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
         align-items: flex-start;
@@ -235,14 +231,26 @@ nav .right-menu {
     .panel {
         max-width: 90%;
     }
+}
 
-    .footer_box {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+@media (max-width: 480px) {
+    .top-navigation-wrap {
+        align-items: flex-start;
     }
 
-    .social-media {
-        justify-content: center;
+    .top-navigation-wrap img {
+        max-width: 8rem;
+    }
+
+    .panel-central h2 {
+        font-size: 1.25rem;
+    }
+
+    .footer_box {
+        padding: 0.625rem;
+    }
+
+    .footer_box .copyright {
+        font-size: 0.875rem;
     }
 }
