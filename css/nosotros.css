@@ -1,6 +1,23 @@
-body {
+html, body {
     margin: 0;
     font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_box {
+    margin-top: auto;
+    background-color: black;
+    padding: 1.25rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
 }
 
 .navegacion {
@@ -96,16 +113,6 @@ nav .right-menu {
     text-align: left;
     margin-left: 1.25rem;
     top: -4.375rem;
-}
-
-.footer_box {
-    background-color: black;
-    padding: 1.25rem;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: relative;
 }
 
 .footer_box .copyright {

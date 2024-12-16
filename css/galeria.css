@@ -1,3 +1,35 @@
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_box {
+    margin-top: auto;
+    background-color: black;
+    padding: 1.25rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+.footer_box {
+    background-color: black;
+    padding: 1.25rem;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .buttons {
     text-align: center;
     margin-bottom: 1.25rem;
@@ -84,11 +116,6 @@
     border-color: #007BFF;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 .navegacion {
     background-color: black;
     padding: 0 1.25rem;
@@ -172,16 +199,6 @@ nav .right-menu {
     font-size: 1rem;
     text-align: left;
     margin-left: 1.25rem;
-}
-
-.footer_box {
-    background-color: black;
-    padding: 1.25rem;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
 }
 
 .footer_box .copyright {
