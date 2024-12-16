@@ -1,6 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-}
+
 
 .buttons {
     text-align: center;
@@ -170,36 +168,27 @@ nav .right-menu {
 }
 
 .footer-box-text {
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.1875rem;
+    font-size: 1rem;
     text-align: left;
-    position: relative;
     margin-left: 1.25rem;
-    top: -4.375rem;
 }
 
 .footer_box {
     background-color: black;
-    height: 7.5rem;
     padding: 1.25rem;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    position: relative;
 }
 
 .footer_box .copyright {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 0.875rem;
     background-color: #808080;
     padding: 0.625rem;
-    margin-left: 1.25rem;
-    text-align: left;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 1.25rem;
 }
 
 .social-media {
@@ -207,22 +196,13 @@ nav .right-menu {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start;
     gap: 0.625rem;
-    position: absolute;
-    bottom: 2.5rem;
-    right: 1.25rem;
-}
-
-.social-media li {
-    margin: 0;
 }
 
 .social-media a {
     text-decoration: none;
     color: white;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 .social-media a:hover {

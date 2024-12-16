@@ -80,9 +80,10 @@ nav .right-menu {
 
 .footer-box-text {
     color: #fff;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 1rem;
-    text-align: center;
-    margin: 1rem 0;
+    text-align: left;
+    margin-left: 1.25rem;
 }
 
 .footer_box {
@@ -92,14 +93,13 @@ nav .right-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .footer_box .copyright {
     font-size: 0.875rem;
     background-color: #808080;
     padding: 0.625rem;
-    margin-top: 1rem;
 }
 
 .social-media {
