@@ -131,10 +131,10 @@ nav .right-menu {
 .panel {
     max-width: 20rem;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     padding: 1.25rem;
     border-radius: 0.5rem;
-    background-color: #f9f9f9;
+    background-color: #313131;
 }
 
 .panel img {
@@ -146,14 +146,15 @@ nav .right-menu {
 .panel h2 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    color: white;
 }
 
 .panel p {
     font-size: 1rem;
     line-height: 1.5;
+    color: white;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .top-navigation-wrap {
         flex-direction: column;
